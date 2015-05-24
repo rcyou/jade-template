@@ -1,0 +1,16 @@
+//- index.jade
+doctype html
+//- adds title variable
+include ./includes/title.jade
+html
+	//- adds head info including meta data, css, js
+	include ./includes/head.jade
+body
+	.page
+		//- logo, main navigation, social media links, etc.
+		include ./includes/header.jade
+		main
+			//- all content is wrapped in <main>
+			include ./includes/content.jade
+		//- copyright info, address, ect.
+		include ./includes/footer.jade
