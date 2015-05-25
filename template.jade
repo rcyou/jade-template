@@ -1,4 +1,4 @@
-//- index.jade
+//- template.jade
 doctype html
 //- adds title variable
 include ./includes/title.jade
@@ -11,6 +11,7 @@ body
 		include ./includes/header.jade
 		main
 			//- all content is wrapped in <main>
-			include ./includes/content.jade
+			block content
+				include ./includes/content.jade
 		//- copyright info, address, ect.
 		include ./includes/footer.jade
