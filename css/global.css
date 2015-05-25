@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* ==========================================================================
+Global CSS
+========================================================================== */
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+	font-size: 1em;
+}
+body {
+	height: 100%;
+	font-size: 1rem; /* average base body font is 16px */
+	font-family: sans-serif;
+	line-height: 1.5;
+	color: #000; /* reset to black */
+	background-color: #eee;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); /* smooths type in all browsers */
+	-webkit-font-smoothing: antialiased;
+}
+img {
+	border: 0;
+	display: block;
+}
+a {
+	color: #00e;
+	text-decoration: underline;
+}
+
+/* add high visibility focus indicators */
+a:hover, a:focus { color: #e00; }
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 1rem 0;
+	padding: 0;
+	font-weight: bold;
+	text-align: left;
+}
+h1, h2, h3 { line-height: 1.125; }
+/* 1.25 ratio - major third modular scale */
+h1 { font-size: 3.052rem; }
+h2 { font-size: 2.441rem; }
+h3 { font-size: 1.953rem; }
+
+/* add h4, h5, h6 */
+h4 { font-size: 1.563rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+sup, sub {
+	font-size: 70%;
+	font-weight: bold;
+}
+sup {
+	vertical-align: super;
+}
+sub {
+	vertical-align: sub;
+}
+
+hr {
+	width: 100%;
+	height: 1px;
+	border: 0;
+	background-color: #ccc;
+}
+
+/* ==========================================================================
+Page & Containers
+========================================================================== */
+.page, header, main, footer {
+	max-width: 100%;
+	width: 100%;
+	margin:0 auto;
+	padding: 0;
+	position: relative;
+}
+
+.container {
+	max-width: 62.5rem;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+
+/* ==========================================================================
+Body / Contents
+========================================================================== */
+main p {
+	margin: 0 0 1rem 0;
+	display: inline-block;
+}
